@@ -1,24 +1,24 @@
 # cadastroPesquisaMusicas
 Sistema em C++ com cadastro, pesquisa de musicas dentro de um arquivo
 
-Nome: Mateus Amaral de Almeida Souza
+Desenvolvedor: Mateus Amaral de Almeida Souza
 
 
 ## DETALHE DE FUNCIONAMENTO DO ALGORITMO:
 
-### Cenário de Teste:
+### Cadastrar álbum e suas respectivas Músicas: 
 
-Cadastrar álbum e suas respectivas Músicas: “testar se aceita nome e número”
+* “testar se aceita nome e número”
 
-“testar se aceita nome e sobrenome”
+* “testar se aceita nome e sobrenome”
 
-“depois de cadastrado verificar se foi salvo no arquivo”
+* “depois de cadastrado verificar se foi salvo no arquivo”
 
 ### Pesquisar por Álbum:
 
-“testar se o ano de lançamento aceita números e letras”
+* “testar se o ano de lançamento aceita números e letras”
 
-“testar se ao digitar os dados do album cadastrados, ele condiz com os dados da pesquisa e se os dados salvos na pasta estão certos”
+* “testar se ao digitar os dados do album cadastrados, ele condiz com os dados da pesquisa e se os dados salvos na pasta estão certos”
 
 ### Pesquisar por coleção de música:
 
@@ -26,24 +26,26 @@ Cadastrar álbum e suas respectivas Músicas: “testar se aceita nome e número
 
 ## Gerar Playlist de músicas aleatórias:
 
-“testar se a playlist respeita o tempo de 1hr e se as músicas geradas são metade aleatórias e metade favoritas ” - Inválido
+* “testar se a playlist respeita o tempo de 1hr e se as músicas geradas são metade aleatórias e metade favoritas ” - Inválido
 
-“testar se as músicas estão inseridas de forma aleatória conforme quantidade estipulada de músicas”
+* “testar se as músicas estão inseridas de forma aleatória conforme quantidade estipulada de músicas”
 
 ### Cadastrar músicas em um álbum:
 
-“testar se as músicas novas cadastradas não sobrescrevem as anteriores”
-“testar se ao cadastrar as músicas, os dados fornecidos iram pro álbum desejado”
+* “testar se as músicas novas cadastradas não sobrescrevem as anteriores”
+*  “testar se ao cadastrar as músicas, os dados fornecidos iram pro álbum desejado”
 
 ### Premissas assumidas:
-Com base nas instruções Gerais fornecidas, onde a interface do sistema deve ser do tipo console e o código deve ser executável eu escolhi a linguagem C++ devido essa facilidade com tipo console e gerar código executável.
+
+  Com base nas instruções Gerais fornecidas, onde a interface do sistema deve ser do tipo console e o código deve ser executável eu escolhi a linguagem C++ devido essa facilidade com tipo console e gerar código executável.
 
 ### Decisões de projeto, incluindo modelagem:
 
-Partindo do pressuposto que Billie Joe, personagem do nosso sistema, tinha como problema a falta de armazenamento de suas músicas, sendo assim eu parti para criação de um sistema que tivesse persistência nos dados, ou seja, os dados sejam armazenado de alguma forma para recuperações futuras. Utilizei de  armazenamento em arquivo.
+  Partindo do pressuposto que Billie Joe, personagem do nosso sistema, tinha como problema a falta de armazenamento de suas músicas, sendo assim eu parti para criação de um sistema que tivesse persistência nos dados, ou seja, os dados sejam armazenado de alguma forma para recuperações futuras. Utilizei de  armazenamento em arquivo.
 
 
 ### Diagrama de Caso de Uso:
+![alt text](https://github.com/mateus2810/cadastroPesquisaMusicas/tree/master/Documenta/casoDeUso.png)
 
 
 * Cadastro de Álbum e Música : O Usuário consegue cadastrar o álbum que
