@@ -4,66 +4,67 @@ Sistema em C++ com cadastro, pesquisa de musicas dentro de um arquivo
 Nome: Mateus Amaral de Almeida Souza
 
 
-DETALHE DE FUNCIONAMENTO DO ALGORITMO:
+## DETALHE DE FUNCIONAMENTO DO ALGORITMO:
 
-Cenário de Teste:
+### CenÃ¡rio de Teste:
 
-Cadastrar álbum e suas respectivas Músicas: “testar se aceita nome e número”
-“testar se aceita nome e sobrenome”
-“depois de cadastrado verificar se foi salvo no arquivo”
+Cadastrar Ã¡lbum e suas respectivas MÃºsicas: â€œtestar se aceita nome e nÃºmeroâ€
 
-Pesquisar por Álbum:
+â€œtestar se aceita nome e sobrenomeâ€
 
-“testar se o ano de lançamento aceita números e letras”
-“testar se ao digitar os dados do album cadastrados, ele condiz com os dados da pesquisa e se os dados salvos na pasta estão certos”
+â€œdepois de cadastrado verificar se foi salvo no arquivoâ€
 
-Pesquisar por coleção de música:
+### Pesquisar por Ãlbum:
 
-“testar se os dados cadastrados condiz com os dados pesquisados”
+â€œtestar se o ano de lanÃ§amento aceita nÃºmeros e letrasâ€
 
-Gerar Playlist de músicas aleatórias:
+â€œtestar se ao digitar os dados do album cadastrados, ele condiz com os dados da pesquisa e se os dados salvos na pasta estÃ£o certosâ€
 
-“testar se a playlist respeita o tempo de 1hr e se as músicas geradas são metade aleatórias e metade favoritas ” - Inválido
-“testar se as músicas estão inseridas de forma aleatória conforme quantidade estipulada de músicas”
+### Pesquisar por coleÃ§Ã£o de mÃºsica:
 
-Cadastrar músicas em um álbum:
+â€œtestar se os dados cadastrados condiz com os dados pesquisadosâ€
 
-“testar se as músicas novas cadastradas não sobrescrevem as anteriores”
-“testar se ao cadastrar as músicas, os dados fornecidos iram pro álbum desejado”
+## Gerar Playlist de mÃºsicas aleatÃ³rias:
 
-Premissas assumidas:
-Com base nas instruções Gerais fornecidas, onde a interface do sistema deve ser do tipo console e o código deve ser executável eu escolhi a linguagem C++ devido essa facilidade com tipo console e gerar código executável.
+â€œtestar se a playlist respeita o tempo de 1hr e se as mÃºsicas geradas sÃ£o metade aleatÃ³rias e metade favoritas â€ - InvÃ¡lido
 
-Decisões de projeto, incluindo modelagem:
+â€œtestar se as mÃºsicas estÃ£o inseridas de forma aleatÃ³ria conforme quantidade estipulada de mÃºsicasâ€
 
-Partindo do pressuposto que Billie Joe, personagem do nosso sistema, tinha como problema a falta de armazenamento de suas músicas, sendo assim eu parti para criação de um sistema que tivesse persistência nos dados, ou seja, os dados sejam armazenado de alguma forma para recuperações futuras. Utilizei de  armazenamento em arquivo.
+### Cadastrar mÃºsicas em um Ã¡lbum:
+
+â€œtestar se as mÃºsicas novas cadastradas nÃ£o sobrescrevem as anterioresâ€
+â€œtestar se ao cadastrar as mÃºsicas, os dados fornecidos iram pro Ã¡lbum desejadoâ€
+
+### Premissas assumidas:
+Com base nas instruÃ§Ãµes Gerais fornecidas, onde a interface do sistema deve ser do tipo console e o cÃ³digo deve ser executÃ¡vel eu escolhi a linguagem C++ devido essa facilidade com tipo console e gerar cÃ³digo executÃ¡vel.
+
+### DecisÃµes de projeto, incluindo modelagem:
+
+Partindo do pressuposto que Billie Joe, personagem do nosso sistema, tinha como problema a falta de armazenamento de suas mÃºsicas, sendo assim eu parti para criaÃ§Ã£o de um sistema que tivesse persistÃªncia nos dados, ou seja, os dados sejam armazenado de alguma forma para recuperaÃ§Ãµes futuras. Utilizei de  armazenamento em arquivo.
 
 
-D iagrama de Caso de Uso:
+### Diagrama de Caso de Uso:
 
 
- 
+* Cadastro de Ãlbum e MÃºsica : O UsuÃ¡rio consegue cadastrar o Ã¡lbum que
+desejar, inserindo nome do Ã¡lbum, ano de lanÃ§amento e nome da banda. Dentro desse mesmo Ã¡lbum o usuÃ¡rio insere informaÃ§Ãµes a respeito da mÃºsica:Nome da mÃºsica, duraÃ§Ã£o dessa mÃºsica e se Ã© uma mÃºsica favorita ou nÃ£o.
 
-C adastro de Álbum e Música : O Usuário consegue cadastrar o álbum que
-desejar, inserindo nome do álbum, ano de lançamento e nome da banda. Dentro desse mesmo álbum o usuário insere informações a respeito da música:Nome da música, duração dessa música e se é uma música favorita ou não.
-
-C onsulta por Música: O usuário consegue pesquisar por: título da música ou
+* Consulta por MÃºsica: O usuÃ¡rio consegue pesquisar por: tÃ­tulo da mÃºsica ou
 banda.
 
-C onsulta por Álbum : O usuário consegue pesquisar por: Ano de lançamento,
-Título do Álbum e Nome da banda.
+* Consulta por Ãlbum : O usuÃ¡rio consegue pesquisar por: Ano de lanÃ§amento,
+TÃ­tulo do Ãlbum e Nome da banda.
 
-G erar Playlist Músicas: O usuário é capaz de solicitar a quantidade de
-músicas que deseja fazer a playlist e em seguida descrever quais são as músicas que serão feitas a playlist aleatória.
+* Gerar Playlist MÃºsicas: O usuÃ¡rio Ã© capaz de solicitar a quantidade de
+mÃºsicas que deseja fazer a playlist e em seguida descrever quais sÃ£o as mÃºsicas que serÃ£o feitas a playlist aleatÃ³ria.
 
-C adastrar Músicas em um álbum: O Usuário consegue cadastrar mais
-músicas dentro de um álbum já cadastrado. O usuário irá escrever o álbum que deseja adicionar músicas e em seguida adicionar informações das músicas: Título da música, duração e se a música é favorita.
+* Cadastrar MÃºsicas em um Ã¡lbum: O UsuÃ¡rio consegue cadastrar mais
+mÃºsicas dentro de um Ã¡lbum jÃ¡ cadastrado. O usuÃ¡rio irÃ¡ escrever o Ã¡lbum que deseja adicionar mÃºsicas e em seguida adicionar informaÃ§Ãµes das mÃºsicas: TÃ­tulo da mÃºsica, duraÃ§Ã£o e se a mÃºsica Ã© favorita.
 
-Instruções para executar o sistema no Windowns:
+### InstruÃ§Ãµes para executar o sistema no Windowns:
 
-Bem simples:
 
-Abrir Arquivo “sistemaProvaDti”, dar um duplo clique sobre “main.exe” e o sistema já irá funcionar.
+Abrir pasta â€œcadastroPesquisaMusicaâ€, dar um duplo clique sobre â€œcodigo.exeâ€ e o sistema jÃ¡ irÃ¡ funcionar.
 
-Se o usuário desejar compilar o código, ou desejar fazer qualquer alteração sugiro que instale um compilador para o c++. (Ex: Code Blocks, Netbeans, Dev C++). Foi utilizado para criar a aplicação Dev C++. Após instalação entrar no arquivo “main.cpp”, terá todo acesso ao código.
+Se o usuÃ¡rio desejar compilar o cÃ³digo, ou desejar fazer qualquer alteraÃ§Ã£o sugiro que instale um compilador para o c++. (Ex: Code Blocks, Netbeans, Dev C++). Foi utilizado para criar a aplicaÃ§Ã£o Dev C++. ApÃ³s instalaÃ§Ã£o entrar no arquivo â€œcodigo.cppâ€, terÃ¡ todo acesso ao cÃ³digo.
 
